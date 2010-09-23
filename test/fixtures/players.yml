@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  team: MyString
+  points: 1
+  boxid: MyString
+
+two:
+  name: MyString
+  team: MyString
+  points: 1
+  boxid: MyString

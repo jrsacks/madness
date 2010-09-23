@@ -1,0 +1,21 @@
+<h1>Listing players</h1>
+<%= @players.length %> Players listed
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Team</th>
+    <th>Points</th>
+    <th>Boxid</th>
+  </tr>
+
+<% @players.sort.each do |player| %>
+  <tr>
+    <td><%=h player.name %></td>
+    <td><%=h player.team %></td>
+    <td><%=h player.points %></td>
+    <td><%=h player.boxid %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

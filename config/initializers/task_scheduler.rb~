@@ -1,0 +1,9 @@
+scheduler = Rufus::Scheduler.start_new  
+logger = RAILS_DEFAULT_LOGGER
+  
+scheduler.every("1m") do  
+  require "uri"
+  require "net/http"
+  params = {'player'=>'http://rivals.yahoo.com/ncaa/basketball/boxscore?gid=201002200357'}
+  Net::HTTP.post_form(URI.parse("http://localhost:3000/players/add_box2"), params)
+end   

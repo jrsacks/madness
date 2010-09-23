@@ -1,0 +1,20 @@
+<h1>Top Scoring Student Athletes</h1>
+<%= @players.length %> Players listed
+<table>
+  <tr>
+    <th>Name</th>
+    <th>School</th>
+    <th>Points</th>
+    <th>Team</th>
+ </tr>
+
+<% @points.sort.each do |player| %>
+  <tr>
+    <td><%=h player.name %></td>
+    <td><%=h player.team %></td>
+    <td><%=h player.points %></td>
+    <td><%=h player.owned %></td>
+</tr>
+<% end %>
+
+</table>

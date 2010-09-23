@@ -1,0 +1,39 @@
+<h1>March Madness Fantasy</h1>
+<a href="players/top/">View All Players by Points Scored</a>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Player Name</th>
+    <th>Player Team</th>
+    <th>Player Points</th>
+    <th>Player Total Points</th>
+    <th>Team Total Points</th>
+    <th>Players Remaining</th>
+  </tr>
+
+  <% @teams.sort.each do |team| %>
+  <tr>
+    <td><%=h team.name %></td>
+    <td/>
+    <td/>
+    <td/>
+    <td/>
+    <td><b><%=h team.get_points%></b></td>
+    <td><%=h team.get_players_alive%></td>
+ </tr>    
+  <% team.get_scorers.sort.each do |scorer| %>
+  <% if scorer.alive %>
+  <tr>
+    <% else %>
+  <tr style="color:RED">
+    <% end %>
+    <td></td>
+    <td><%=h scorer.name%></td>
+    <td><%=h scorer.team%></td>
+    <td><%=h scorer.points%></td>
+    <td><%=h scorer.total_points%></td>
+ </tr>
+  <% end %>
+  <% end %>
+</table>
+<br />

@@ -1,0 +1,28 @@
+<h1>Editing player</h1>
+
+<% form_for(@player) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :team %><br />
+    <%= f.text_field :team %>
+  </p>
+  <p>
+    <%= f.label :points %><br />
+    <%= f.text_field :points %>
+  </p>
+  <p>
+    <%= f.label :boxid %><br />
+    <%= f.text_field :boxid %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @player %> |
+<%= link_to 'Back', players_path %>

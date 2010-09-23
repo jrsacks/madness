@@ -1,0 +1,38 @@
+<h1>March Madness Fantasy</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Player Name</th>
+    <th>Player Team</th>
+    <th>Player Points</th>
+    <th>Player Total Points</th>
+    <th>Team Total Points</th>
+  </tr>
+
+  <% @teams.sort.each do |team| %>
+  <tr>
+    <td><%=h team.name %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><b><%=h team.get_points%></b></td>
+    <td><%= link_to 'Show', team %></td>
+    <td><%= link_to 'Edit', edit_team_path(team) %></td>
+    <td><%= link_to 'Destroy', team, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>    
+  <% team.get_scorers.sort.each do |scorer| %>
+  <tr> 
+    <td></td>
+    <td><%=h scorer.name%></td>
+    <td><%=h scorer.team%></td>
+    <td><%=h scorer.points%></td>
+    <td><%=h scorer.total_points%></td>
+ </tr>
+  <% end %>
+  <% end %>
+</table>
+<br />
+
+<%= link_to 'New team', new_team_path %>

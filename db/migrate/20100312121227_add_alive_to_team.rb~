@@ -1,0 +1,27 @@
+class AddAliveToTeam < ActiveRecord::Migration
+  def self.up
+    add_column :teams, :p1alive, :boolean
+    add_column :teams, :p2alive, :boolean
+    add_column :teams, :p3alive, :boolean
+    add_column :teams, :p4alive, :boolean
+    add_column :teams, :p5alive, :boolean
+    add_column :teams, :p6alive, :boolean
+    add_column :teams, :p7alive, :boolean
+    add_column :teams, :p8alive, :boolean
+    add_column :teams, :p9alive, :boolean
+    add_column :teams, :p10alive, :boolean
+  end
+
+  def self.down
+    remove_column :teams, :p10alive
+    remove_column :teams, :p9alive
+    remove_column :teams, :p8alive
+    remove_column :teams, :p7alive
+    remove_column :teams, :p6alive
+    remove_column :teams, :p5alive
+    remove_column :teams, :p4alive
+    remove_column :teams, :p3alive
+    remove_column :teams, :p2alive
+    remove_column :teams, :p1alive
+  end
+end

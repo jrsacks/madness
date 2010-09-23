@@ -1,0 +1,147 @@
+<h1>Editing team</h1>
+
+<% form_for(@team) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :p1name %><br />
+    <%= f.text_field :p1name %>
+  </p>
+  <p>
+    <%= f.label :p1team %><br />
+    <%= f.text_field :p1team %>
+  </p>
+  <p>
+    <%= f.label :p1alive %><br />
+    <%= f.text_field :p1alive %>
+  </p>
+
+  <p>
+    <%= f.label :p2name %><br />
+    <%= f.text_field :p2name %>
+  </p>
+  <p>
+    <%= f.label :p2team %><br />
+    <%= f.text_field :p2team %>
+  </p>
+  <p>
+    <%= f.label :p2alive %><br />
+    <%= f.text_field :p2alive %>
+  </p>
+
+  <p>
+    <%= f.label :p3name %><br />
+    <%= f.text_field :p3name %>
+  </p>
+  <p>
+    <%= f.label :p3team %><br />
+    <%= f.text_field :p3team %>
+  </p>
+  <p>
+    <%= f.label :p3alive %><br />
+    <%= f.text_field :p3alive %>
+  </p>
+
+  <p>
+    <%= f.label :p4name %><br />
+    <%= f.text_field :p4name %>
+  </p>
+  <p>
+    <%= f.label :p4team %><br />
+    <%= f.text_field :p4team %>
+  </p>  <p>
+    <%= f.label :p4alive %><br />
+    <%= f.text_field :p4alive %>
+  </p>
+
+
+  <p>
+    <%= f.label :p5name %><br />
+    <%= f.text_field :p5name %>
+  </p>
+  <p>
+    <%= f.label :p5team %><br />
+    <%= f.text_field :p5team %>
+  </p>  <p>
+    <%= f.label :p5alive %><br />
+    <%= f.text_field :p5alive %>
+  </p>
+
+
+  <p>
+    <%= f.label :p6name %><br />
+    <%= f.text_field :p6name %>
+  </p>
+  <p>
+    <%= f.label :p6team %><br />
+    <%= f.text_field :p6team %>
+  </p>
+  <p>
+    <%= f.label :p6alive %><br />
+    <%= f.text_field :p6alive %>
+  </p>
+
+  <p>
+    <%= f.label :p7name %><br />
+    <%= f.text_field :p7name %>
+  </p>
+  <p>
+    <%= f.label :p7team %><br />
+    <%= f.text_field :p7team %>
+  </p>
+  <p>
+    <%= f.label :p7alive %><br />
+    <%= f.text_field :p7alive %>
+  </p>
+
+  <p>
+    <%= f.label :p8name %><br />
+    <%= f.text_field :p8name %>
+  </p>
+  <p>
+    <%= f.label :p8team %><br />
+    <%= f.text_field :p8team %>
+  </p>
+  <p>
+    <%= f.label :p8alive %><br />
+    <%= f.text_field :p8alive %>
+  </p>
+
+  <p>
+    <%= f.label :p9name %><br />
+    <%= f.text_field :p9name %>
+  </p>
+  <p>
+    <%= f.label :p9team %><br />
+    <%= f.text_field :p9team %>
+  </p>
+  <p>
+    <%= f.label :p9alive %><br />
+    <%= f.text_field :p9alive %>
+  </p>
+
+  <p>
+    <%= f.label :p10name %><br />
+    <%= f.text_field :p10name %>
+  </p>
+  <p>
+    <%= f.label :p10team %><br />
+    <%= f.text_field :p10team %>
+  </p>
+  <p>
+    <%= f.label :p10alive %><br />
+    <%= f.text_field :p10alive %>
+  </p>
+
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @team %> |
+<%= link_to 'Back', teams_path %>
